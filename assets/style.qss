@@ -1,0 +1,166 @@
+/* Jendela Utama & Dasar*/
+QMainWindow, QDialog, QWidget {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+}
+
+/*  Tab Widget */
+QTabWidget::pane {
+    border: 1px solid #334155;
+    border-radius: 4px;
+    background-color: #1e293b;
+    margin-top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #0f172a;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    border-bottom-color: #334155;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 8px 16px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: #1e293b;
+    color: #10b981;
+    border-bottom-color: #1e293b;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+/* Tabel Data */
+QTableWidget {
+    background-color: #1e293b;
+    color: #f8fafc;
+    gridline-color: #334155;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    selection-background-color: #10b981; 
+    selection-color: #0f172a;
+}
+
+QHeaderView::section {
+    background-color: #334155;
+    color: #f8fafc;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #1e293b;
+    font-weight: bold;
+}
+
+/* Kalender */
+QCalendarWidget QWidget {
+    alternate-background-color: #334155;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    background-color: #1e293b;
+    color: #f8fafc;
+    selection-background-color: #10b981;
+    selection-color: #0f172a;
+}
+
+QCalendarWidget QToolButton {
+    color: #f8fafc;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+QCalendarWidget QMenu {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+/* Notifikasi (QListWidget) */
+QListWidget#notifikasiList {
+    background-color: #1e293b;
+    border: 1px solid #f59e0b; 
+    border-radius: 4px;
+    color: #f8fafc;
+    padding: 4px;
+}
+
+QListWidget#notifikasiList::item {
+    padding: 8px;
+    border-bottom: 1px solid #334155;
+}
+
+QListWidget#notifikasiList::item:hover {
+    background-color: #334155;
+    border-radius: 2px;
+}
+
+/* Tombol Aksi */
+QPushButton {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2563eb;
+}
+
+/* Tombol Khusus */
+QPushButton#btnTambah {
+    background-color: #10b981; 
+}
+QPushButton#btnTambah:hover { 
+    background-color: #059669; 
+}
+
+QPushButton#btnEdit {
+    background-color: #f59e0b; 
+}
+QPushButton#btnEdit:hover { 
+    background-color: #d97706; 
+}
+
+QPushButton#btnHapus {
+    background-color: transparent;
+    border: 1px solid #ef4444; 
+    color: #ef4444;
+}
+QPushButton#btnHapus:hover {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
+QPushButton#btnStatistik {
+    background-color: #8b5cf6;
+}
+QPushButton#btnStatistik:hover { 
+    background-color: #7c3aed; 
+}
+
+/* Input Fields */
+QLineEdit, QComboBox, QDateEdit, QSpinBox {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    padding: 6px;
+    color: #f8fafc;
+}
+
+QLineEdit:focus, QComboBox:focus, QDateEdit:focus, QSpinBox:focus {
+    border: 1px solid #10b981;
+}
+
+/* Footer / Status Bar */
+QStatusBar {
+    background-color: #0f172a;
+    color: #94a3b8;
+    border-top: 1px solid #334155;
+}
